@@ -1,0 +1,64 @@
+/*
+Theme Name: Orto Intelligente
+Theme URI: https://ortointelligente.it/
+Description: Tema sviluppato su misura per il sito ortointelligente.it
+Author: Gioele Pannetto & Matteo Orlandi
+Author URI: https://pangio.it/
+Version: 1.0
+*/
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px -1px rgba(0, 0, 0, .1);
+}
+
+.navbar-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.container {
+    width: 100%
+}
+
+@media (min-width:640px) {
+    .container {
+        max-width: 640px
+    }
+}
+
+@media (min-width:768px) {
+    .container {
+        max-width: 768px
+    }
+}
+
+@media (min-width:1024px) {
+    .container {
+        max-width: 1024px
+    }
+}
+
+@media (min-width:1280px) {
+    .container {
+        max-width: 1280px
+    }
+}
+
+@media (min-width:1536px) {
+    .container {
+        max-width: 1536px
+    }
+}
