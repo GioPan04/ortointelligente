@@ -31,6 +31,29 @@ body {
     padding: 2.5rem 0;
 }
 
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo img {
+    width: 4rem;
+}
+
+.navbar-logo > span {
+    margin-left: 1rem;
+    padding-left: 1rem;
+    border: 1px #e5e7eb;
+    border-style: none none none solid;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+}
+
+.navbar-sc {
+    width: 8rem;
+}
+
 .navbar-content {
     background-color: var(--bg-primary);
     padding: .75rem 0;
