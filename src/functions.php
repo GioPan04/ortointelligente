@@ -6,4 +6,11 @@ function equeue_style() {
 }
 add_action('wp_enqueue_scripts', 'equeue_style', 100);
 
+
+function init_menu()
+{
+    register_nav_menu('ortointelligente-navbar', 'Barra di navigazione');
+}
+add_action('init', 'init_menu');
+
 add_theme_support('admin-bar', array( 'callback' => '__return_false' ) );

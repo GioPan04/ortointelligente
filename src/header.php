@@ -1,3 +1,8 @@
+<?php
+$menu_id = get_nav_menu_locations()['ortointelligente-navbar'];
+
+?>
+
 <nav class="navbar">
     <div class="container navbar-head">
         <div className="flex items-center divide-x">
@@ -12,13 +17,9 @@
     </div>
     <div class="navbar-content">
         <div class="navbar-links container">
-            <?php // wp_get_nav_menu_items ?>
-            <a href="/">Home</a>
-            <a href="/schede">Schede</a>
-            <a href="/">Report attivitá</a>
-            <a href="/">Orto</a>
-            <a href="/serra">Serra intelligente</a>
-            <a href="/">Applicazioni con stampante 3D</a>
+            <?php foreach(wp_get_nav_menu_items( $menu_id ) as $a) : ?>
+                <a href="<?php echo $a->url ?>"><?php echo $a->title ?></a>
+            <?php endforeach; ?>
         </div>
     </div>
 </nav>
