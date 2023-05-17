@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html <?php language_attributes(); ?>>
+<head>
+    <meta charset="<?php bloginfo('charset'); ?>" />
+    <title><?php wp_title(); ?></title>
+    <?php wp_head(); ?>
+</head>
+<body>
 <?php
 $menu_id = get_nav_menu_locations()['ortointelligente-navbar'];
 
@@ -17,7 +25,7 @@ $menu_id = get_nav_menu_locations()['ortointelligente-navbar'];
     </div>
     <div class="navbar-content">
         <div class="navbar-links container">
-            <?php foreach(wp_get_nav_menu_items( $menu_id ) as $a) : ?>
+            <?php foreach (wp_get_nav_menu_items($menu_id) as $a) : ?>
                 <a href="<?php echo $a->url ?>"><?php echo $a->title ?></a>
             <?php endforeach; ?>
         </div>
