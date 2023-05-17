@@ -10,14 +10,15 @@
             <img className="w-32" src="/Logo-Sapere-Consumare.png" alt="Logo Sapere e Consumare" />
         </a>
     </div>
-    <div className="bg-primary py-3 text-white">
-        <div className="container mx-auto flex space-x-16">
-            <Link href="/">Home</Link>
-            <Link href="/schede">Schede</Link>
-            <Link href="/">Report attivitá</Link>
-            <Link href="/">Orto</Link>
-            <Link href="/serra">Serra intelligente</Link>
-            <Link href="/">Applicazioni con stampante 3D</Link>
+    <div class="navbar-content">
+        <div class="navbar-links container">
+            <?php // wp_get_nav_menu_items ?>
+            <a href="/">Home</a>
+            <a href="/schede">Schede</a>
+            <a href="/">Report attivitá</a>
+            <a href="/">Orto</a>
+            <a href="/serra">Serra intelligente</a>
+            <a href="/">Applicazioni con stampante 3D</a>
         </div>
     </div>
 </nav>

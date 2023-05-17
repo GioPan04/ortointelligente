@@ -4,9 +4,12 @@ Theme URI: https://ortointelligente.it/
 Description: Tema sviluppato su misura per il sito ortointelligente.it
 Author: Gioele Pannetto & Matteo Orlandi
 Author URI: https://pangio.it/
-Version: 1.0
+Version: 1.0.1
 */
 
+:root {
+    --bg-primary: rgb(13 127 63);
+}
 
 html,
 body {
@@ -25,8 +28,40 @@ body {
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+    padding: 2.5rem 0;
+}
+
+.navbar-content {
+    background-color: var(--bg-primary);
+    padding: .75rem 0;
+}
+
+.navbar-links {
+    margin: 0 auto;
+    display: flex;
+}
+
+.navbar-links > a {
+    margin-left: 4rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar-links > a:first-child {
+    margin-left: 0 !important;
+}
+
+.footer {
+    background-color: var(--bg-primary);
+    color: #fff;
+    width: 100%;
+    margin-top: 8rem;
+    border: 8px #f27931;
+    border-style: solid none none none;
+}
+
+.footer-content {
+    margin: 3rem auto 1.5rem;
 }
 
 .container {
