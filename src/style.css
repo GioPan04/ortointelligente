@@ -87,7 +87,8 @@ body {
 }
 
 .footer-content {
-    margin: 3rem auto 1.5rem;
+    padding-bottom: 3rem;
+    margin: 3rem auto 0;
 }
 
 .post-container {
@@ -96,6 +97,18 @@ body {
 
 .container {
     width: 100%
+}
+
+.post-list {
+    margin-top: 3rem;
+}
+
+.post-list-item {
+    display: block;
+}
+
+.post-list-image {
+    width: 100%;
 }
 
 @media (min-width:640px) {
@@ -113,6 +126,15 @@ body {
 @media (min-width:1024px) {
     .container {
         max-width: 1024px
+    }
+
+    .post-list-item {
+        display: flex;
+    }
+
+    .post-list-image {
+        width: 18rem;
+        margin-right: 1rem;
     }
 }
 

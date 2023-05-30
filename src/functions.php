@@ -14,3 +14,5 @@ function init_menu()
 add_action('init', 'init_menu');
 
 add_theme_support('admin-bar', array( 'callback' => '__return_false' ) );
+
+add_theme_support('post-thumbnails');
