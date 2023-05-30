@@ -112,6 +112,15 @@ body {
     object-fit: cover;
 }
 
+.post-hero {
+    width: 100%;
+    height: 20rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+}
+
 @media (min-width:640px) {
     .container {
         max-width: 640px
