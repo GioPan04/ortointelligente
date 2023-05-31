@@ -217,3 +217,21 @@ body {
         max-width: 1536px
     }
 }
+
+@media (max-width: 781px) {
+    .home-title-1 {
+        text-align: center;
+    }
+
+    .home-section-2 {
+        flex-direction: column-reverse;
+    }
+
+    .home-section-2 p {
+        text-align: left;
+    }
+
+    .home-title-2 {
+        text-align: center;
+    }
+} 
