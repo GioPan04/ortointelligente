@@ -10,6 +10,4 @@ const menu = () => {
 };
 
 
-document.addEventListener('DOMContentLoaded', () => {
-  menu();
-});
+document.addEventListener('DOMContentLoaded', menu);
