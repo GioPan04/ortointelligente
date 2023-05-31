@@ -275,9 +275,10 @@ body {
         height: 10rem;
         margin-right: 1rem;
     }
-
+    
     .footer-grid {
         display: grid;
+        text-align: left;
     }
 }
 
