@@ -13,6 +13,10 @@ Version: 1.0.1
     --bg-primary: rgb(13 127 63);
 }
 
+* {
+    box-sizing: border-box;
+}
+
 html,
 body {
     margin: 0;
@@ -23,6 +27,10 @@ body {
 .navbar {
     background-color: #fff;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px -1px rgba(0, 0, 0, .1);
+}
+
+.navbar-desktop {
+    display: none;
 }
 
 .navbar-head {
@@ -60,6 +68,7 @@ body {
 .navbar-content {
     background-color: var(--bg-primary);
     padding: .75rem 0;
+    color: #fff;
 }
 
 .navbar-links {
@@ -75,6 +84,51 @@ body {
 
 .navbar-links > a:first-child {
     margin-left: 0 !important;
+}
+
+.navbar-mobile {
+    background-color: var(--bg-primary);
+    color: #fff;
+}
+
+.navbar-mobile-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+}
+
+.navbar-m-content {
+    padding: .75rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-m-content a {
+    text-decoration: none;
+}
+
+.navbar-m-menu-btn {
+    width: 2rem;
+}
+
+.navbar-m-links {
+    position: absolute;
+    background-color: var(--bg-primary);
+    width: 100vw;
+    display: none;
+    padding: 1rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.5rem;
+}
+
+.navbar-m-links-visible {
+    display: grid;
+}
+
+.navbar-m-links a {
+    color: #fff;
+    text-decoration: none;
 }
 
 .footer {
@@ -134,10 +188,11 @@ body {
 
 .post-container {
     margin: 0 auto;
+    padding: 0 .5rem;
 }
 
 .container {
-    width: 100%
+    width: 100vw;
 }
 
 .post-list {
@@ -191,6 +246,14 @@ body {
 }
 
 @media (min-width:1024px) {
+    .navbar-desktop {
+        display: block;
+    }
+
+    .navbar-mobile {
+        display: none;
+    }
+
     .container {
         max-width: 1024px
     }

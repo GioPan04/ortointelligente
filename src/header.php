@@ -3,6 +3,7 @@
 <head>
     <meta charset="<?php bloginfo('charset'); ?>" />
     <title><?php wp_title(); ?></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php wp_head(); ?>
 </head>
 <body>
@@ -11,7 +12,7 @@ $menu_id = get_nav_menu_locations()['ortointelligente-navbar'];
 
 ?>
 
-<nav class="navbar">
+<nav class="navbar navbar-desktop">
     <div class="container navbar-head">
         <div class="navbar-logo">
             <a href="https://gobettivolta.edu.it/" target="_blank">
@@ -29,5 +30,19 @@ $menu_id = get_nav_menu_locations()['ortointelligente-navbar'];
                 <a href="<?php echo $a->url ?>"><?php echo $a->title ?></a>
             <?php endforeach; ?>
         </div>
+    </div>
+</nav>
+
+<nav class="navbar navbar-mobile">
+    <div class="navbar-m-content">
+        <span class="navbar-mobile-logo">Orto<br />Intelligente</span>
+        <a id="navbar-m-menu-btn" href="#">
+            <img class="navbar-m-menu-btn" src="<?php echo get_template_directory_uri() ?>/imgs/menu.svg" alt="menu"/>
+        </a>
+    </div>
+    <div class="navbar-m-links">
+        <?php foreach (wp_get_nav_menu_items($menu_id) as $a) : ?>
+            <a href="<?php echo $a->url ?>"><?php echo $a->title ?></a>
+        <?php endforeach; ?>
     </div>
 </nav>
