@@ -81,14 +81,54 @@ body {
     background-color: var(--bg-primary);
     color: #fff;
     width: 100%;
-    margin-top: 8rem;
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+    margin-top: 5rem;
     border: 8px #f27931;
     border-style: solid none none none;
 }
 
-.footer-content {
-    padding-bottom: 3rem;
-    margin: 3rem auto 0;
+.footer a {
+    color: #fff;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4,minmax(0,1fr));
+    gap: 1.25rem;
+}
+
+.footer-logo {
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 1.9rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.footer-desc {
+    font-size: 0.8rem;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links span {
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+.footer-links a {
+    text-decoration: none;
+}
+
+.footer-credits {
+    font-size: 0.8rem;
+    display: block;
+    text-align: center;
+    margin-top: 1.5rem;
 }
 
 .post-container {
