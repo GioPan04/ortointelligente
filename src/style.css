@@ -118,6 +118,7 @@ body {
 .footer-links span {
     font-weight: 600;
     margin-bottom: .5rem;
+    font-size: 1.125rem;
 }
 
 .footer-links a {
