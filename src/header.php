@@ -35,7 +35,9 @@ $menu_id = get_nav_menu_locations()['ortointelligente-navbar'];
 
 <nav class="navbar navbar-mobile">
     <div class="navbar-m-content">
-        <span class="navbar-mobile-logo">Orto<br />Intelligente</span>
+        <a href="/">
+            <span class="navbar-mobile-logo">Orto<br />Intelligente</span>
+        </a>
         <a id="navbar-m-menu-btn" href="#">
             <img class="navbar-m-menu-btn" src="<?php echo get_template_directory_uri() ?>/imgs/menu.svg" alt="menu"/>
         </a>
