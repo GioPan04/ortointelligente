@@ -141,6 +141,11 @@ body {
     text-decoration: none;
 }
 
+.text-justified p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
 .footer {
     background-color: var(--bg-primary);
     color: #fff;
