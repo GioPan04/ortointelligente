@@ -20,7 +20,7 @@ $menu_id = get_nav_menu_locations()['ortointelligente-navbar'];
             </a>
             <span className="ml-4 pl-4 text-2xl font-bold leading-6"><span className="text-primary">Ort</span><span className="text-[#b959a3]">o</span><br /><span className="text-[#f27931]">Intelligente</span></span>
         </div>
-        <a href="https://www.sapereconsumare.it/" target="_blank">
+        <a href="https://www.sapereconsumare.it/osservatorio-progetti/dallorto-intelligente-alla-comunita/" target="_blank">
             <img class="navbar-sc" src="<?php echo get_template_directory_uri() ?>/imgs/sapereconsumare.png" alt="Logo Sapere e Consumare" />
         </a>
     </div>
