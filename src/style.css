@@ -48,7 +48,7 @@ body {
 }
 
 .navbar-logo img {
-    width: 4rem;
+    width: 5rem;
 }
 
 .navbar-logo > span {
@@ -56,13 +56,13 @@ body {
     padding-left: 1rem;
     border: 1px #e5e7eb;
     border-style: none none none solid;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 700;
-    line-height: 1.5rem;
+    line-height: 2rem;
 }
 
 .navbar-sc {
-    width: 8rem;
+    width: 10rem;
 }
 
 .navbar-content {
