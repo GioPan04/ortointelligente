@@ -164,10 +164,13 @@ body {
 .footer-grid {
     flex-direction: column;
     display: flex;
-    align-items: center;
     text-align: center;
     grid-template-columns: repeat(4,minmax(0,1fr));
-    gap: 1.25rem;
+    gap: 1.5rem;
+}
+
+.footer-section-title {
+    display: block;
 }
 
 .footer-logo {
@@ -180,6 +183,7 @@ body {
 
 .footer-desc {
     font-size: 0.8rem;
+    display: block;
 }
 
 .footer-links {
@@ -202,6 +206,10 @@ body {
     display: block;
     text-align: center;
     margin-top: 1.5rem;
+}
+
+.footer-sponsor-logo {
+    width: 10rem;
 }
 
 .post-container {
@@ -234,6 +242,7 @@ body {
     background-position: center center;
     color: #fff;
     position: relative;
+    margin-bottom: 2rem;
 }
 
 .post-hero-overlay {
@@ -289,6 +298,7 @@ body {
     .footer-grid {
         display: grid;
         text-align: left;
+        gap: 5rem;
     }
 }
 
