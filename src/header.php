@@ -18,7 +18,7 @@ $menu_id = get_nav_menu_locations()['ortointelligente-navbar'];
             <a href="https://gobettivolta.edu.it/" target="_blank">
                 <img src="<?php echo get_template_directory_uri() ?>/imgs/logo-gv.png" alt="Logo Gobetti Volta"/>
             </a>
-            <span class="navbar-site-logo"><a href="/"><span>Orto</span><br /><span>Intelligente</span></a></span>
+            <span class="navbar-site-logo"><a href="/"><span style="color: var(--bg-primary)">Ort<span style="color: #b959a3">o</span></span><br /><span style="color: #f27931">Intelligente</span></a></span>
         </div>
         <a href="https://www.sapereconsumare.it/osservatorio-progetti/dallorto-intelligente-alla-comunita/" target="_blank">
             <img class="navbar-sc" src="<?php echo get_template_directory_uri() ?>/imgs/sapereconsumare.png" alt="Logo Sapere e Consumare" />
